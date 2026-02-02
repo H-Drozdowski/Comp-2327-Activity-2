@@ -37,7 +37,7 @@ class Shape(ABC):
     def calculate_perimeter(self) -> float:
         """Calculates the shapes perimeter.
         
-        Returns
+        Returns:
             float: The perimeter of the shape.
         """
         pass

@@ -41,7 +41,7 @@ class Triangle(Shape):
         if not ((side_1 + side_2) > side_3 and (side_1 + side_3)> side_2
             and(side_2 + side_3) > side_1):
 
-            raise ValueError(f"The sides do not satisfy the Triangle"
+            raise ValueError(f"The sides do not satisfy the Triangle "
                              f"Inequality Theorem.")
 
         

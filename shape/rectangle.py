@@ -21,13 +21,13 @@ class Rectangle(Shape):
             numeric.
         """
 
+        super().__init__(color)
+
         if not isinstance(length, int):
             raise ValueError("Length must be numeric.")
 
         if not isinstance(width, int):
             raise ValueError("Width must be numeric.")
-        
-        super().__init__(color)
 
         self.__length = length
         self.__width = width
@@ -66,3 +66,4 @@ class Rectangle(Shape):
                 f"This rectangle has four sides with the lengths of "
                 f"{self.__length}, {self.__width}, {self.__length} " 
                 f"and {self.__width} centimeters.")
+    
