@@ -6,8 +6,9 @@ Usage:
     $ python -m unittest tests/test_rectangle.py
 """
 
+import unittest
+
 __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"
 
-import unittest
 
