@@ -32,7 +32,7 @@ class Rectangle(Shape):
         self.__length = length
         self.__width = width
 
-    def calculate_area(self):
+    def calculate_area(self) -> float:
         """Calculates and returns the area of the rectangle.
         
         Returns:
@@ -42,7 +42,7 @@ class Rectangle(Shape):
         area = (self.__length * self.__width)
         return area
     
-    def calculate_perimeter(self):
+    def calculate_perimeter(self) -> float:
         """Calculates and returns the perimeter of the rectangle.
         
         Returns:
@@ -50,4 +50,19 @@ class Rectangle(Shape):
         """
 
         perimeter = ((self.__length * 2) + (self.__width * 2))
+        return perimeter
+
+    def __str__(self):
+        """Returns a "informal" string representation of 
+        the Rectangle object.
         
+        Returns:
+            str: The "informal" string representation of
+            the Rectangle object.
+        """
+        shape_str = super().__str__()
+
+        return (f"{shape_str} \n"
+                f"This rectangle has four sides with the lengths of "
+                f"{self.__length}, {self.__width}, {self.__length} " 
+                f"and {self.__width} centimeters.")

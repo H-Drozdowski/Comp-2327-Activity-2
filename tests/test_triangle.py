@@ -16,7 +16,7 @@ class TestTriangle(unittest.TestCase):
     """Test for the Triangle class."""
 
     def test_init_initializes_state(self):
-        """Tests if init is initialized correctly when the correct
+        """Tests if Triangle is initialized correctly when the correct
         values are input."""
 
         #Arrange 
@@ -130,6 +130,7 @@ class TestTriangle(unittest.TestCase):
 
         #Assert
         expected = (
+            "The shape color is Blue. \n"
             "This triangle has three sides with lengths of 5, 5, and "
             "5 centimeters.")
 

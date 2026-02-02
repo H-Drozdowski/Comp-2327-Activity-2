@@ -75,7 +75,17 @@ class Triangle(Shape):
         return perimeter
 
     def __str__(self) -> str:
-        super().__str__()
-        return( f"This triangle has three sides with lengths of "
+        """Returns a "informal" string representation of 
+        the Triangle object.
+        
+        Returns:
+            str: The "informal" string representation of
+            the Triangle object.
+        """
+        shape_str = super().__str__()
+        
+        return( f"{shape_str} \n"
+                f"This triangle has three sides with lengths of "
                 f"{self.__side_1}, {self.__side_2}, and {self.__side_3}"
                 f" centimeters.")
+    
