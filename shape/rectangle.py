@@ -15,7 +15,10 @@ class Rectangle(Shape):
             the Rectangle in centimeters.
             width (int): Represents the width of two opposing sides of 
             the Rectangle in centimeters.
-            
+
+        Raises:
+            ValueError: Raises a ValueError when length or width is not
+            numeric.
         """
 
         if not isinstance(length, int):
@@ -25,3 +28,26 @@ class Rectangle(Shape):
             raise ValueError("Width must be numeric.")
         
         super().__init__(color)
+
+        self.__length = length
+        self.__width = width
+
+    def calculate_area(self):
+        """Calculates and returns the area of the rectangle.
+        
+        Returns:
+            The area of the rectangle.
+        """
+
+        area = (self.__length * self.__width)
+        return area
+    
+    def calculate_perimeter(self):
+        """Calculates and returns the perimeter of the rectangle.
+        
+        Returns:
+            The perimeter of the rectangle.    
+        """
+
+        perimeter = ((self.__length * 2) + (self.__width * 2))
+        

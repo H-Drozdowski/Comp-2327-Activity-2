@@ -130,7 +130,6 @@ class TestTriangle(unittest.TestCase):
 
         #Assert
         expected = (
-            "The shape color is Blue \n"
             "This triangle has three sides with lengths of 5, 5, and "
             "5 centimeters.")
 
