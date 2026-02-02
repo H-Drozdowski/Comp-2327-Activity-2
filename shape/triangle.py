@@ -75,7 +75,7 @@ class Triangle(Shape):
         return perimeter
 
     def __str__(self) -> str:
-        return (f"The shape color is {self._color}\n"
+        return( f"The shape color is {self._color} \n"
                 f"This triangle has three sides with lengths of "
                 f"{self.__side_1}, {self.__side_2}, and {self.__side_3}"
                 f" centimeters.")
