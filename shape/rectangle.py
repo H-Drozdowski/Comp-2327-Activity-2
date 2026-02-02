@@ -1,6 +1,6 @@
 """This module defines the Rectangle class."""
 
-from shape.shape import Shape
+from shape import Shape
 
 __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"

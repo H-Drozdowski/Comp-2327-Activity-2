@@ -5,7 +5,7 @@ Usage:
 
     $ python -m unittest tests/test_rectangle.py
 """
-from shape.rectangle import Rectangle 
+from shape import Rectangle
 import unittest
 
 __author__ = "Hudson Drozdowski"
@@ -143,4 +143,3 @@ class TestRectangle(unittest.TestCase):
         actual = target.calculate_perimeter()
 
         self.assertEqual(expected, actual)
-

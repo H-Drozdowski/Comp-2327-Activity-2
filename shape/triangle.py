@@ -1,6 +1,6 @@
 """This module defines the Triangle class."""
 
-from shape.shape import Shape
+from shape import Shape
 from math import sqrt
 
 __author__ = "Hudson Drozdowski"

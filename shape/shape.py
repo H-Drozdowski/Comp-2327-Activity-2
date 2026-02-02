@@ -1,6 +1,6 @@
 """This module defines the Shape class."""
 
-from abc import ABC , abstractmethod
+from abc import ABC , abstractmethod  
 
 __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"
@@ -19,8 +19,6 @@ class Shape(ABC):
                 string.
         """
     
-        
-
         if len(color.strip()) == 0:
             raise ValueError("Color cannot be blank.")
 

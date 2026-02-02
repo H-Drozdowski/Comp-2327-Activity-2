@@ -7,7 +7,7 @@ Usage:
 """
 
 import unittest
-from shape.triangle import Triangle
+from shape import Triangle
 
 __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"
