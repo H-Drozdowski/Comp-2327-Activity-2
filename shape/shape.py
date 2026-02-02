@@ -44,7 +44,7 @@ class Shape(ABC):
         """
         pass
 
-    def __str__(self):
+    def __str__(self) -> str:
         """Returns a "informal" string representation of 
         the Shape object.
         

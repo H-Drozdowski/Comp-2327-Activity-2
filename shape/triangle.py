@@ -43,6 +43,13 @@ class Triangle(Shape):
             raise ValueError(f"The sides do not satisfy the Triangle"
                              f"Inequality Theorem.")
 
+        
         self.__side_1 = side_1
         self.__side_2 = side_2
         self.__side_3 = side_3
+
+    def __str__(self) -> str:
+        return (f"The shape color is {self._color}\n"
+                f"This triangle has three sides with lengths of "
+                f"{self.__side_1}, {self.__side_2}, and {self.__side_3}"
+                f" centimeters.")
