@@ -1,6 +1,7 @@
 """This module defines the Triangle class."""
 
 from shape.shape import Shape
+from math import sqrt
 
 __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"
@@ -47,6 +48,31 @@ class Triangle(Shape):
         self.__side_1 = side_1
         self.__side_2 = side_2
         self.__side_3 = side_3
+
+
+    def calculate_area(self) -> float:
+        """Calculates the area of the triangle.
+        
+        Returns: 
+            The area of the triangle.
+        """
+
+        sp = (self.__side_1 + self.__side_2 + self.__side_3) / 2
+        area = sqrt(sp * (sp - self.__side_1) * (sp - self.__side_2) 
+                       * (sp - self.__side_3))
+        
+        return area
+    
+    def calculate_perimeter(self) -> float:
+        """Calculates the perimeter of the triangle.
+        
+        Returns:
+            The perimeter of the triangle.
+        """
+
+        perimeter = (self.__side_1 + self.__side_2 +self.__side_3)
+
+        return perimeter
 
     def __str__(self) -> str:
         return (f"The shape color is {self._color}\n"
