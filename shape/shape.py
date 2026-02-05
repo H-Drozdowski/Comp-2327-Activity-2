@@ -8,15 +8,15 @@ __version__ = "3.13.7"
 class Shape(ABC):
     """Represents a shape."""
 
+    @abstractmethod
     def __init__(self, color : str):
         """Initializes a new instance of the Shape class.
         
-            Args:
-                color (str): The color of the shape.
+        Args:
+            color (str): The color of the shape.
                 
-            Raises:
-                ValueError: A ValueError is Raised when color is a blank
-                string.
+        Raises:
+            ValueError: Raised when color is a blank string.
         """
     
         if len(color.strip()) == 0:
@@ -31,6 +31,7 @@ class Shape(ABC):
         Returns:
             float: The area of the shape.
         """
+
         pass
 
     @abstractmethod
@@ -40,6 +41,7 @@ class Shape(ABC):
         Returns:
             float: The perimeter of the shape.
         """
+
         pass
 
     def __str__(self) -> str:
