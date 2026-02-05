@@ -6,19 +6,20 @@ __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"
 
 class Rectangle(Shape):
+    """Represents a Rectangle."""
 
     def __init__(self, color : str, length : int, width : int):
         """Initializes a new instance of the Rectangle class.
         
         Args:
             length (int): Represents the length of two opposing sides of
-            the Rectangle in centimeters.
+                the Rectangle in centimeters.
             width (int): Represents the width of two opposing sides of 
-            the Rectangle in centimeters.
+                the Rectangle in centimeters.
 
         Raises:
             ValueError: Raises a ValueError when length or width is not
-            numeric.
+                numeric.
         """
 
         super().__init__(color)
@@ -39,7 +40,7 @@ class Rectangle(Shape):
             The area of the rectangle.
         """
 
-        area = (self.__length * self.__width)
+        area = self.__length * self.__width
         return area
     
     def calculate_perimeter(self) -> float:
@@ -49,7 +50,7 @@ class Rectangle(Shape):
             The perimeter of the rectangle.    
         """
 
-        perimeter = ((self.__length * 2) + (self.__width * 2))
+        perimeter = self.__length * 2 + self.__width * 2
         return perimeter
 
     def __str__(self):

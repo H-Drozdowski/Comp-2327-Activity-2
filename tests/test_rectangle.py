@@ -5,6 +5,7 @@ Usage:
 
     $ python -m unittest tests/test_rectangle.py
 """
+
 from shape import Rectangle
 import unittest
 
@@ -12,7 +13,7 @@ __author__ = "Hudson Drozdowski"
 __version__ = "3.13.7"
 
 class TestRectangle(unittest.TestCase):
-    """Test fot the rectangle class"""
+    """Test for the rectangle class."""
 
     def test_init_initializes_state(self):
         """Tests if Rectangle is initialized correctly when the correct
